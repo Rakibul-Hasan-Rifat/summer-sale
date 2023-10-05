@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_text">
+            <p>---SALE FEVER---</p>
+            <h1>Purchase TK 200 or above & get <span class="primary_color">20% off</span></h1>
+            <p>Use Promo Code <span class="primary_element"><strong>SELL200</strong></span></p>
+        </div>
+        <div class="header_image">
+            <img src="./images/Summer 1.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="categories_container">
+            <!-- .cotegory*3>h3.category_title+.items_container>.item*3>.item_image_container>img^.ratings>img*5^p>strong^p>small -->
+            <div class="category">
+                <h3 class="category_title">Kitchenware</h3>
+                <div class="items_container">
+                    <div class="item">
+                        <div class="item_image_container"><img src="./images/prod1.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>K. Accessories</strong></p>
+                        <p class="item_price"><small>39.00</small> TK</p>
+                    </div>
+                    <div class="item">
+                        <div class="item_image_container"><img src="./images/prod2.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>K. Accessories</strong></p>
+                        <p class="item_price"><small>25.00</small> TK</p>
+                    </div>
+                    <div class="item">
+                        <div class="item_image_container"><img src="./images/prod3.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>Home Cooker</strong></p>
+                        <p class="item_price"><small>49.00</small> TK</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3 class="category_title">Sportswear</h3>
+                <div class="items_container">
+                    <div class="item">
+                        <div class="item_image_container"><img src="./images/prod4.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>Sports Back Cap</strong></p>
+                        <p class="item_price"><small>49.00</small> TK</p>
+                    </div>
+                    <div class="item">
+                        <div class="item_image_container"><img src="./images/prod5.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>Full Jersey Set</strong></p>
+                        <p class="item_price"><small>69.00</small> TK</p>
+                    </div>
+                    <div class="item">
+                        <div class="item_image_container"><img src="./images/prod6.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>Sports cates</strong></p>
+                        <p class="item_price"><small>159.00</small> TK</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3 class="category_title">Furniture</h3>
+                <div class="items_container">
+                    <div class="item">
+                        <div class="item_image_container"><img src="./images/prod7.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>Single Relax Chair</strong></p>
+                        <p class="item_price"><small>185.00</small> TK</p>
+                    </div>
+                    <div class="item">
+                        <div class="item_image_container"><img src="./images/prod8.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>Children play</strong></p>
+                        <p class="item_price"><small>299.00</small> TK</p>
+                    </div>
+                    <div class="item">
+                        <div class="item_image_container"><img src="/images/prod9.png" alt=""></div>
+                        <div class="item_ratings">⭐⭐⭐⭐⭐</div>
+                        <p class="item_name"><strong>Flexible Sofa</strong></p>
+                        <p class="item_price"><small>339.00</small> TK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="coupon_container">
+                <h4>Have a coupon?</h4>
+                <div class="coupon_apply">
+                    <input id="coupon_field" type="text" placeholder="Coupon code">
+                    <button id="apply_btn" class="primary_element" disabled>Apply</button>
+                </div>
+            </div>
+            <div class="buy_details">
+                <ol class="product_list"></ol>
+                <hr>
+                <div class="product_amounts">
+                    <p>Total Price: <span id="total_price" class="item_price">00.00</span> TK</p>
+                    <p>Discount: <span id="discount" class="item_price">00.00</span> TK</p>
+                    <p>Total: <span id="total" class="item_price">00.00</span> TK</p>
+                </div>
+                <hr>
+                <button id="purchase_btn" class="primary_element" disabled>Make Purchase</button>
+            </div>
+        </div>
+    </main>
+    <section class="popup_section">
+        <div class="popup_container">
+            <div class="popup_image_container">
+                <img src="./images/congo.png" alt="">
+            </div>
+            <h3>Congratulations</h3>
+            <p>You purchased the product</p>
+            <button id="go_home_btn" class="primary_element">Go Home</button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
